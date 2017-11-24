@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/subsearch"
+        android:layout_width="fill_parent"
+        android:layout_height="23dp"
+        android:text="你好你好，我是搜索"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="0dp" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="130dp">
+        <ImageView
+            android:id="@+id/country"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/shu"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:gravity="center|left"
+            android:text="@string/shu_intro"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_toRightOf="@+id/shu"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/div1"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#d5d3d3"
+        android:layout_below="@+id/relativeLayout"></ImageView>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/huixia"
+        android:gravity="center"
+        android:text="- 麾下代表人物 -"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/belong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

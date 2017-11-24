@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">MidProj</string>
+    <string name="app_name">"Android_MidTermProj "</string>
+    <string name="wu">"吴"</string>
+    <string name="shu">"蜀"</string>
+    <string name="wei">"魏"</string>
+    <string name="qun">"群"</string>
+    <string name="shu_intro">"      蜀汉政权的国号为“汉”（刘备自称是汉室的延续）。而由于其所建立的政权以蜀地为根据地，所以多被称为“蜀”。以其地称其国，后人逐渐习惯了这个称呼，而又为了承认刘备建立的汉室政权，故称其为蜀汉。"</string>
+    <string name="wu_intro">"       孙坚为汉末吴郡富春人，因军功积累一直做到长沙太守。孙坚死后，其子孙策向江东发展，公元196年，东汉朝廷封孙策为”吴侯”。孙策死后，其弟孙权接掌兵权。公元220年，曹魏建立，曹丕封孙权为“吴王”。公元229年5月23日，孙权称帝，就以“吴”为国号。"</string>
+    <string name="wei_intro">"      东汉末年，天下大乱，群雄逐鹿，曹操在军阀混战中，势力逐渐增强，并且控制了东汉朝廷，为曹魏的建立奠定了基础。曹操受封魏公时，治所在东汉时期魏郡所在地的邺，因此汉献帝封他为“魏公”、“魏王”，因此国号为“魏”。"</string>
+    <string name="qun_intro">"      东汉末年，由於土地兼并越加尖锐，地主豪强拥有私人武力，加上中央政府政治黑暗，皇权虚弱无力，对地方过度放权，因而造成群雄割据的局面。在镇压黄巾农民大起义的过程中，各地地主武装乘机扩大势力，强占地盘，从而形成一股割据势力。"</string>
 </resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/shu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:background="@drawable/red"
+        android:gravity="center"
+        android:src="@drawable/shu"
+        android:scaleType="fitXY"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/wu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/shu"
+        android:layout_alignBottom="@+id/shu"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/shu"
+        android:layout_toRightOf="@+id/shu"
+        android:background="@drawable/green"
+        android:gravity="center"
+        android:src="@drawable/wu"
+        android:scaleType="fitXY"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/wei"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/wu"
+        android:layout_alignBottom="@+id/wu"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/wu"
+        android:layout_toRightOf="@+id/wu"
+        android:background="@drawable/yellow"
+        android:gravity="center"
+        android:src="@drawable/wei"
+        android:scaleType="fitXY"
+        android:textAlignment="center" />
+    <ImageButton
+        android:id="@+id/qun"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/wu"
+        android:layout_alignBottom="@+id/wu"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/wei"
+        android:layout_toRightOf="@+id/wei"
+        android:background="@drawable/blue"
+        android:gravity="center"
+        android:src="@drawable/qunxiong"
+        android:scaleType="fitXY"
+        android:textAlignment="center" />
+
+</RelativeLayout>
