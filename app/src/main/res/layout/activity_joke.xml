@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/back_joke"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/back"
+            android:background="@color/backgroundColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:text="爆笑三国"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/divided_line4joke"
+        android:layout_below="@id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/dividedLine"/>
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_below="@+id/divided_line4joke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ViewFlipper>
+</RelativeLayout>

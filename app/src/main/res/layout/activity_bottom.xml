@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="40dp"
-    android:background="@drawable/background"
+    android:background="@mipmap/background"
     >
 
     <LinearLayout
@@ -17,7 +17,7 @@
             android:id="@+id/iv_people"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/full_mainpage" />
+            android:src="@mipmap/full_mainpage" />
 
         <TextView
             android:id="@+id/tv_people"
@@ -43,7 +43,7 @@
             android:id="@+id/iv_store"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/empty_star" />
+            android:src="@mipmap/empty_star" />
 
         <TextView
             android:id="@+id/tv_store"
@@ -68,7 +68,7 @@
             android:id="@+id/iv_history"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/empty_foot" />
+            android:src="@mipmap/empty_foot" />
         <TextView
             android:id="@+id/tv_history"
             android:layout_width="wrap_content"

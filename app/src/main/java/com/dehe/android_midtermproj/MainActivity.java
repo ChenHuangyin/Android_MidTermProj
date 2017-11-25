@@ -119,17 +119,17 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         // ImageView和TetxView置为绿色，页面随之跳转
         switch (v.getId()) {
             case R.id.ll_people:
-                iv_people.setImageResource(R.drawable.full_mainpage);
+                iv_people.setImageResource(R.mipmap.full_mainpage);
                 tv_people.setTextColor(Color.rgb(0,0,0));
                 initFragment(0);
                 break;
             case R.id.ll_store:
-                iv_store.setImageResource(R.drawable.full_star);
+                iv_store.setImageResource(R.mipmap.full_star);
                 tv_store.setTextColor(Color.rgb(0,0,0));
                 initFragment(1);
                 break;
             case R.id.ll_history:
-                iv_history.setImageResource(R.drawable.full_foot);
+                iv_history.setImageResource(R.mipmap.full_foot);
                 tv_history.setTextColor(Color.rgb(0,0,0));
                 initFragment(2);
                 break;
@@ -141,9 +141,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
     private void restartBotton() {
         // ImageView置为灰色
-        iv_people.setImageResource(R.drawable.empty_mainpage);
-        iv_store.setImageResource(R.drawable.empty_star);
-        iv_history.setImageResource(R.drawable.empty_foot);
+        iv_people.setImageResource(R.mipmap.empty_mainpage);
+        iv_store.setImageResource(R.mipmap.empty_star);
+        iv_history.setImageResource(R.mipmap.empty_foot);
         // TextView置为白色
         tv_people.setTextColor(Color.rgb(216,213,213));
         tv_store.setTextColor(Color.rgb(216,213,213));

@@ -10,7 +10,7 @@
         android:layout_marginStart="45dp"
         android:background="@drawable/red"
         android:gravity="center"
-        android:src="@drawable/shu"
+        android:src="@mipmap/shu"
         android:scaleType="fitXY"
         android:textAlignment="center"
         android:layout_marginTop="10dp"
@@ -30,7 +30,7 @@
         android:layout_toRightOf="@+id/shu"
         android:background="@drawable/green"
         android:gravity="center"
-        android:src="@drawable/wu"
+        android:src="@mipmap/wu"
         android:scaleType="fitXY"
         android:textAlignment="center" />
 
@@ -46,7 +46,7 @@
         android:layout_toRightOf="@+id/wu"
         android:background="@drawable/yellow"
         android:gravity="center"
-        android:src="@drawable/wei"
+        android:src="@mipmap/wei"
         android:scaleType="fitXY"
         android:textAlignment="center" />
     <ImageButton
@@ -61,7 +61,7 @@
         android:layout_toRightOf="@+id/wei"
         android:background="@drawable/blue"
         android:gravity="center"
-        android:src="@drawable/qunxiong"
+        android:src="@mipmap/qun"
         android:scaleType="fitXY"
         android:textAlignment="center" />
 

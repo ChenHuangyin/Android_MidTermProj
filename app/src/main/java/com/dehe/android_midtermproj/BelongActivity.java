@@ -29,19 +29,19 @@ public class BelongActivity extends AppCompatActivity {
 
         TextView intro=(TextView)findViewById(R.id.intro);
         if(which==1){
-            country.setImageResource(R.drawable.shu);
+            country.setImageResource(R.mipmap.shu);
             intro.setText(R.string.shu_intro);
         }
         else if(which==2){
-            country.setImageResource(R.drawable.wu);
+            country.setImageResource(R.mipmap.wu);
             intro.setText(R.string.wu_intro);
         }
         else if(which==3){
-            country.setImageResource(R.drawable.wei);
+            country.setImageResource(R.mipmap.wei);
             intro.setText(R.string.wei_intro);
         }
         else{
-            country.setImageResource(R.drawable.qun);
+            country.setImageResource(R.mipmap.qun);
             intro.setText(R.string.qun_intro);
         }
         ListView mListView=(ListView)findViewById(R.id.belong);

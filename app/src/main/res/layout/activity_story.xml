@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back_story"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/back"
+            android:background="@color/backgroundColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:text="经典故事"
+            android:textColor="#444444"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/divided_line4story"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/dividedLine"/>
+
+    <TextView
+        android:id="@+id/title_story"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="故事标题"
+        android:textSize="20sp"
+        android:textColor="#444444"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="15dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/heroImage_story"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/hero"
+            android:src="@mipmap/zhugeliang"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/heroName_story"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/heroImage_story"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="英雄（主要）人物名字"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <ImageButton
+            android:id="@+id/collectHero_story"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/backgroundColor"
+            android:src="@mipmap/empty_star"
+            android:scaleType="fitXY"
+            android:textAlignment="center" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text_story"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="故事文本"
+            android:textSize="18sp"
+            android:textColor="#444444"/>
+    </ScrollView>
+
+</LinearLayout>
