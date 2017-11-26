@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PersonPageActivity" />
+        <activity android:name=".ModifyActivity" />
+        <activity android:name=".NewPersonActivity"></activity>
     </application>
 
 </manifest>
