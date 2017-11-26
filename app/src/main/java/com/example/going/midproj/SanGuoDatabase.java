@@ -118,6 +118,18 @@ public class SanGuoDatabase extends SQLiteOpenHelper {
         db.update("person", values, "id=?", new String[]{id} );
     }
 
+    public ArrayList<String> all() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ArrayList<String> res = new ArrayList<String>();
+        Cursor cursor = db.query("person", null, null, null, null, null, null);
+        cursor.moveToFirst();
+        do {
+            res.add(cursor.getString(cursor.getColumnIndex("name")));
+        } while (cursor.moveToNext());
+        cursor.close();
+        return res;
+    }
+
     public ArrayList<String> all_collect() {
         SQLiteDatabase db = this.getWritableDatabase();
         ArrayList<String> res = new ArrayList<String>();
