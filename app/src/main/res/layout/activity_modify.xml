@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.going.midproj.ModifyActivity"
+
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/modifytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:showDividers = "middle"
+            android:divider = "@drawable/divider_line"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/modifyname_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="10dp"
+                android:text="姓名：" />
+
+            <EditText
+                android:id="@+id/modifyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@null"
+                android:hint="请输入姓名"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/modifyforce_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:text="势力：" />
+
+            <EditText
+                android:id="@+id/modifyforce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="14sp"
+                android:background="@null"
+                android:hint="请输入人物所属势力名"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:text="" />
+            <TextView
+                android:id="@+id/modifyabstractlabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:text="简介：" />
+
+            <EditText
+                android:id="@+id/modifyabstract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="14sp"
+                android:background="@null"
+                android:hint="请输入人物简介"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/modifyhistorylabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:text="历史：" />
+
+            <EditText
+                android:id="@+id/modifyhistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="14sp"
+                android:background="@null"
+                android:hint="请输入人物历史"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:text="" />
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/green_circle"
+                android:text="保存"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

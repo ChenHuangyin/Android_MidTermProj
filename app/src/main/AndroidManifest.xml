@@ -16,6 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".MainActivity">
 
         </activity>
@@ -23,6 +24,11 @@
         <activity android:name=".DetailActivity"></activity>
         <activity android:name=".JokeActivity"></activity>
         <activity android:name=".StoryActivity"></activity>
+=======
+        <activity android:name=".PersonPageActivity" />
+        <activity android:name=".ModifyActivity" />
+        <activity android:name=".NewPersonActivity"></activity>
+>>>>>>> origin/DataBase
     </application>
 
 </manifest>
