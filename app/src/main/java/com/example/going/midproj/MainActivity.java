@@ -44,19 +44,6 @@ public class MainActivity extends AppCompatActivity {
                 }
                 fos.close();
                 is.close();
-                Toast.makeText(this, "123",Toast.LENGTH_SHORT).show();
-            } else {
-                file.delete();
-                InputStream is = this.getResources().openRawResource(
-                        R.raw.sanguo); //欲导入的数据库
-                FileOutputStream fos = new FileOutputStream(DB_PATH + "/" + DB_NAME);
-                byte[] buffer = new byte[BUFFER_SIZE];
-                int count = 0;
-                while ((count = is.read(buffer)) > 0) {
-                    fos.write(buffer, 0, count);
-                }
-                fos.close();
-                is.close();
             }
         } catch (FileNotFoundException e) {
             Log.e("Database", "File not found");

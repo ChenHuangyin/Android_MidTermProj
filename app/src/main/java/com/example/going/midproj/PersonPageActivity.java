@@ -26,6 +26,8 @@ public class PersonPageActivity extends AppCompatActivity {
         final Intent intent = getIntent();
         String name = intent.getStringExtra("name");
         sanGuoDatabase = new SanGuoDatabase(this , "sanguo.db", null, 1);
+        final String id = sanGuoDatabase.find_by_name(name, "id");
+        sanGuoDatabase.set_visited(id);
         try {
             Bitmap bitmap = sanGuoDatabase.find_img_by_name(this, name);
             ImageView imageView = (ImageView)findViewById(R.id.app_bar_image);
@@ -49,7 +51,7 @@ public class PersonPageActivity extends AppCompatActivity {
         TextView history = (TextView) findViewById(R.id.history);
         String sh = sanGuoDatabase.find_by_name(name, "history");
         history.setText(sh + "\n");
-        final String id = sanGuoDatabase.find_by_name(name, "id");
+
         FloatingActionButton floatingActionButton = (FloatingActionButton) findViewById(R.id.personfab);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override

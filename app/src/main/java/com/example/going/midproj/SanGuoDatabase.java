@@ -18,12 +18,6 @@ import java.util.ArrayList;
  */
 
 public class SanGuoDatabase extends SQLiteOpenHelper {
-    private static final String CREATE_PERSON = "create table if not exists person (id integer primary key autoincrement," +
-            "name text," +
-            "force text," +
-            "abstract text," +
-            "history text" +
-            ")";
     private static final String FIND_PERSON = "select * from person where id=?";
     private Context mContext;
     public SanGuoDatabase(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
@@ -33,7 +27,6 @@ public class SanGuoDatabase extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(CREATE_PERSON);
 
     }
 
@@ -91,10 +84,11 @@ public class SanGuoDatabase extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ArrayList<String> res = new ArrayList<String>();
         Cursor cursor = db.query("person", null, "force=?", new String[]{force}, null, null, null);
-        cursor.moveToFirst();
-        do {
-            res.add(cursor.getString(cursor.getColumnIndex(attr)));
-        } while (cursor.moveToNext());
+        if(cursor.moveToFirst()) {
+            do {
+                res.add(cursor.getString(cursor.getColumnIndex(attr)));
+            } while (cursor.moveToNext());
+        }
         cursor.close();
         return res;
     }
@@ -103,10 +97,11 @@ public class SanGuoDatabase extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ArrayList<String> res = new ArrayList<String>();
         Cursor cursor = db.query("person", null, "name like ?", new String[]{"%" + name + "%"}, null, null, null);
-        cursor.moveToFirst();
-        do {
-            res.add(cursor.getString(cursor.getColumnIndex(attr)));
-        } while (cursor.moveToNext());
+        if(cursor.moveToFirst()) {
+            do {
+                res.add(cursor.getString(cursor.getColumnIndex(attr)));
+            } while (cursor.moveToNext());
+        }
         cursor.close();
         return res;
     }
@@ -122,10 +117,11 @@ public class SanGuoDatabase extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ArrayList<String> res = new ArrayList<String>();
         Cursor cursor = db.query("person", null, null, null, null, null, null);
-        cursor.moveToFirst();
-        do {
-            res.add(cursor.getString(cursor.getColumnIndex("name")));
-        } while (cursor.moveToNext());
+        if(cursor.moveToFirst()) {
+            do {
+                res.add(cursor.getString(cursor.getColumnIndex("name")));
+            } while (cursor.moveToNext());
+        }
         cursor.close();
         return res;
     }
@@ -134,10 +130,11 @@ public class SanGuoDatabase extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ArrayList<String> res = new ArrayList<String>();
         Cursor cursor = db.query("person", null, "collect=true", null, null, null, null);
-        cursor.moveToFirst();
-        do {
-            res.add(cursor.getString(cursor.getColumnIndex("id")));
-        } while (cursor.moveToNext());
+        if(cursor.moveToFirst()) {
+            do {
+                res.add(cursor.getString(cursor.getColumnIndex("id")));
+            } while (cursor.moveToNext());
+        }
         cursor.close();
         return res;
     }
@@ -145,11 +142,13 @@ public class SanGuoDatabase extends SQLiteOpenHelper {
     public ArrayList<String> all_visited() {
         SQLiteDatabase db = this.getWritableDatabase();
         ArrayList<String> res = new ArrayList<String>();
-        Cursor cursor = db.query("person", null, "visited=true", null, null, null, null);
-        cursor.moveToFirst();
-        do {
-            res.add(cursor.getString(cursor.getColumnIndex("id")));
-        } while (cursor.moveToNext());
+        Cursor cursor = db.query("person", null, "visited=?", new String[] {"true"}, null, null, null);
+        if(cursor.moveToFirst()) {
+            do {
+                res.add(cursor.getString(cursor.getColumnIndex("name")));
+            } while (cursor.moveToNext());
+        }
+
         cursor.close();
         return res;
     }

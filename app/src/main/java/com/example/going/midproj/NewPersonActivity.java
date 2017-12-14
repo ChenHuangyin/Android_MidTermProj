@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class NewPersonActivity extends AppCompatActivity {
     private  SanGuoDatabase sanGuoDatabase;
     @Override
@@ -21,6 +23,7 @@ public class NewPersonActivity extends AppCompatActivity {
         toolbar.setTitle("新增人物");
         setSupportActionBar(toolbar);
         sanGuoDatabase = new SanGuoDatabase(this , "sanguo.db", null, 1);
+        ArrayList<String> a = sanGuoDatabase.all_visited();
         final EditText editText = (EditText) findViewById(R.id.modifyname);
         final EditText editText1 = (EditText) findViewById(R.id.modifyforce);
         final EditText editText2 = (EditText) findViewById(R.id.modifyabstract);
